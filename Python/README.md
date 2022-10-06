@@ -15,7 +15,7 @@ Generator(제너레이터)는 루프의 Iteration(반복) 동작을 제어할 �
 
 제너레이터 방식을 활용하는 대표적인 함수, 주로 for 문에서 쓰인다.
 
-'''
+```
 >>> list(range(5))
 [0, 1, 2, 3, 4]
 >>> range(5)
@@ -25,7 +25,7 @@ range(0, 5)
 >>>for i in range(5):
         print(i, end=' ')
 0 1 2 3 4
-'''
+```
 
 range()는 range 클래스를 리턴하며, for 문에서 사용할 경우 내부적으로는 제너레이터의 next()를 호출하듯 매번 다음 숫자를 생성해내게 된다.
 
@@ -39,3 +39,6 @@ a와 b의 차이점은 a에는 이미 생성된 값이 담겨 있고, b는 생�
 
 ## enumerate
 
+enumerate() 함수는 여러가지 자료형(list, set, tuple 등)을 인덱스를 포함한 enumerate 객체로 리턴한다.
+
+```
